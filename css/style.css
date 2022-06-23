@@ -2,6 +2,10 @@
     --bgtheme: linear-gradient(134.3deg, #001597 3.03%, #01104D 47.1%, #020C1C 80.14%, #020B09 96.45%);
 }
 
+.themebg {
+    background: var(--bgtheme) !important;
+}
+
 #parent_wrapper {
     min-width: 100vw;
     background: #F5F5F5;
@@ -25,7 +29,7 @@
     width: 329px;
     height: 40px;
     border-radius: 16px;
-    margin-left: 210px;
+    margin-left: 250px;
 }
 
 .nav-search-icon {
@@ -91,15 +95,12 @@
 
 /* banner-sectio */
 .banner-section {
-    /* width: 1166px;
-    height: 261px; */
     margin: 0px 10px 0px auto;
-    border-radius: 300px;
+    /* border-radius: 300px; */
 }
 
 .banner-card-radius {
     border-radius: 16px;
-    position: relative;
 }
 
 
@@ -160,3 +161,35 @@
 
 
 /* end banner */
+
+/* section menu start */
+.menubar-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.menubar-section::-webkit-scrollbar {
+    display: none;
+}
+
+.more-items-btn {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.single-photos {
+    width: 373px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.multi-photos {
+    width: 318px;
+    height: 244px;
+    border-radius: 15px;
+}
+
+/* section menu end */
