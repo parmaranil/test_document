@@ -192,4 +192,83 @@
     border-radius: 15px;
 }
 
+.overlap-image-size {
+    width: 1107px;
+    height: 426px;
+    background: linear-gradient(90.26deg, #000000 1.86%, rgba(0, 0, 0, 0.87) 28.85%, rgba(91, 91, 91, 0) 99.08%), url(.jpg);
+    border-radius: 15px;
+}
+
+.overlap-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.overlap-text {
+    width: 468px;
+    height: 110px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.play-icon {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: whitesmoke;
+    color: var(--bgtheme);
+}
+
+.green-heart-vector {
+    width: 13px;
+    height: 12px;
+    background: linear-gradient(153.87deg, #00E49A 13.53%, #00D595 26.41%, #00A484 71.5%, #00917E 93.23%);
+}
+
+.category-text {
+    width: 166px;
+    height: 66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    background: linear-gradient(134.3deg, #001597 3.03%, #01104D 47.1%, #020C1C 80.14%, #020B09 96.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.rating-icon {
+    width: 42px;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.video-details {
+    width: 215px;
+    height: 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #303030;
+}
+
 /* section menu end */
