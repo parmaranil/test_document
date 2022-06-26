@@ -2,8 +2,19 @@
     --bgtheme: linear-gradient(134.3deg, #001597 3.03%, #01104D 47.1%, #020C1C 80.14%, #020B09 96.45%);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .themebg {
-    background: var(--bgtheme) !important;
+    background: var(--bgtheme);
+}
+
+.themecolor {
+    color: var(--bgtheme);
+    background: var(--bgtheme);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #parent_wrapper {
@@ -17,8 +28,6 @@
 
 /* navbar css start */
 .navbar-section {
-    /* width: 1440px;
-    height: 100px; */
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 0px 0px 15px 0px;
@@ -46,7 +55,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height */
     color: #C7C7C7;
 }
 
@@ -62,10 +70,6 @@
     height: 25px;
     filter: drop-shadow(0px 0px 2.73504px rgba(0, 0, 0, 0.15));
     border-radius: 50%;
-    /* Inside auto layout */
-    /* flex: none;
-    order: 0;
-    flex-grow: 0; */
 }
 
 .profile-details .dropdown-menu {
@@ -93,10 +97,92 @@
 
 /* navbar css end */
 
-/* banner-sectio */
+/* sidebar css start */
+
+.sidebar {
+    min-width: 213px;
+    width: 213px;
+    height: 859px;
+    background: #FFFFFF;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.brand-logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    justify-self: unset;
+}
+
+.brand-name {
+    font-size: 15px;
+    background: var(--bgtheme);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+.brand-name-text {
+    font-size: 12px;
+    background: var(--bgtheme);
+    position: relative;
+    top: -5px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-admin {
+    background: var(--bgtheme);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-menu-item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8D8D8D;
+}
+
+.sidebar-menu-item-list:hover {
+    background: var(--bgtheme) !important;
+}
+
+.sidebar-menu-item-list:hover .themecolor {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-menu-item-list:hover .sidebar-menu-item {
+    color: white;
+}
+
+.sidebar-menu-item-list.active {
+    background: var(--bgtheme) !important;
+    color: white;
+}
+
+/* sidebar css end */
+
+/* banner-section */
 .banner-section {
-    margin: 0px 10px 0px auto;
-    /* border-radius: 300px; */
+    margin: 0px 10px 0px 220px;
+}
+
+@media screen and (max-width:767px) {
+    .banner-section {
+        margin: 0px 10px 0px auto;
+    }
 }
 
 .banner-card-radius {
@@ -110,8 +196,6 @@
     height: 180px;
     background: url(.png);
     margin-top: -70px;
-    /* primary blue */
-    /* border: 2px solid #001C93; */
     filter: drop-shadow(0px 0px 8.10256px rgba(0, 0, 0, 0.15));
     border-radius: 60.7692px;
 }
@@ -150,16 +234,6 @@
     border-radius: 15px;
 }
 
-@media screen and (max-width:768px) {
-    .test {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-}
-
-
 /* end banner */
 
 /* section menu start */
@@ -180,13 +254,15 @@
     right: 0px;
 }
 
-.single-photos {
+.single-photos .card {
+    min-width: 373px;
     width: 373px;
     height: 500px;
     border-radius: 15px;
 }
 
-.multi-photos {
+.multi-photos .card {
+    min-width: 318px;
     width: 318px;
     height: 244px;
     border-radius: 15px;
@@ -206,9 +282,6 @@
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
-
-    /* white */
-
     color: #FFFFFF;
 }
 
@@ -225,8 +298,8 @@
 
 .play-icon {
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 25%;
+    left: 45%;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -241,8 +314,8 @@
 }
 
 .category-text {
-    width: 166px;
-    height: 66px;
+    width: 146px;
+    /* height: 66px; */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -252,6 +325,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.parent-card .card {
+    min-width: 248px !important;
+    width: 248px;
+}
+
+.parent-img-card {
+    min-width: 248px;
+    width: 248px;
+    height: 145px;
 }
 
 .rating-icon {
@@ -269,6 +353,101 @@
     font-size: 14px;
     line-height: 17px;
     color: #303030;
+}
+
+.star-icon {
+    width: 8.85px;
+    height: 8.17px;
+    font-size: 10px;
+    position: relative;
+    top: -4px;
+}
+
+.rating-number {
+    width: 14.47px;
+    height: 11.57px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.52941px;
+    position: relative;
+    top: -4px;
+    left: 2px;
+    line-height: 12px;
+    background: linear-gradient(134.3deg, #001597 3.03%, #01104D 47.1%, #020C1C 80.14%, #020B09 96.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.more-items-btn-right {
+    position: absolute;
+    top: 40%;
+    right: -12px;
+    z-index: 1;
+}
+
+.more-items-btn-left {
+    position: absolute;
+    left: -12px;
+    top: 40%;
+    z-index: 1;
+}
+
+.time-video {
+    font-size: 10px;
+    position: absolute;
+    top: 48%;
+    right: 0%;
+    padding: 0px 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    color: #FFFFFF;
+    border-radius: 15px 0px;
+}
+
+.podcasts-rating-icon-number {
+    font-size: 10px;
+    width: 55.85px;
+    height: 26px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-radius: 0px 15px;
+}
+
+
+.podcast-list-item .card {
+    width: 337px;
+    min-width: 337px;
+    height: 337px;
+    border-radius: 14.4429px;
+    background-image: linear-gradient(180deg, rgba(58, 58, 58, 0.4) 0%, rgba(58, 58, 58, 0) 54.42%, #161616 76.39%), url(../images/pod-one.png);
+}
+
+.podcast-list-item .card-img-overlay {
+    position: absolute;
+    top: 234px;
+}
+
+.podcast-title {
+    width: 250px;
+    height: 34px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.3314px;
+    line-height: 21px;
+}
+
+.podcast-profile-img {
+    width: 29px;
+    height: 29px;
+    background: url(.png);
+    filter: drop-shadow(0px 0px 3.2265px rgba(0, 0, 0, 0.15));
+    border-radius: 8.66571px;
 }
 
 /* section menu end */

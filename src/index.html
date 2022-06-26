@@ -1,218 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Test Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Test Document</title>
 </head>
+
 <body>
-        <div id="parent_wrapper">
-            <header>
-                <nav class="navbar navbar-expand-lg p-4 navbar-section">
-                    
-                    <button class="navbar-toggler ml-auto border-0" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fa fa-bars" aria-hidden="true"></i> </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <form class="search-parent bg-white shadow-sm form-inline my-2 my-lg-0">
-                            <i class="fa fa-search nav-search-icon ml-2" aria-hidden="true"></i>           
-                            <input type="search" class="navbar-search-input ml-3" placeholder="Search..." />  
-                          </form>
-                      <ul class="navbar-nav navbar-mobile-view-icon ml-auto">
-                      
-                        <li class="nav-item active">
-                          <a class="nav-link navbar-icon-color" href="#">
-                            <i class="far fa-envelope fa-md "></i>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link navbar-icon-color" href="#">
-                            <i class="far fa-bell fa-md "></i>
-                          </a>
-                        </li>
-                        <li class="nav-item dropdown profile-details">
-                          <a class="nav-link py-1 mr-2 dropdown-toggle  btn btn-sm btn-white shadow-sm rounded" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="profile-img" src="../images/profile-card-img.svg" alt="profile-img">
-                          </a>
-                          <div class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </li>
-                      </ul>
-                     
+  <div id="parent_wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg p-4 navbar-section">
+
+        <button class="navbar-toggler ml-auto border-0" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="search-parent bg-white shadow-sm form-inline">
+            <i class="fa fa-search nav-search-icon ml-2" aria-hidden="true"></i>
+            <input type="search" class="navbar-search-input ml-3" placeholder="Search..." />
+          </form>
+          <ul class="navbar-nav navbar-mobile-view-icon ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link navbar-icon-color" href="#">
+                <i class="far fa-envelope fa-md "></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-icon-color" href="#">
+                <i class="far fa-bell fa-md "></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown profile-details">
+              <a class="nav-link py-1 mr-2 dropdown-toggle  btn btn-sm btn-white shadow-sm rounded" href="#"
+                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="profile-img" src="../images/profile-card-img.svg" alt="profile-img">
+              </a>
+              <div class="dropdown-menu profile-dropdown" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+    </header>
+    <section class="sidebar">
+      <div class="container">
+        <div class="py-4 px-3 mb-4">
+          <div class="media d-flex align-item-center">
+
+            <div class="rounded-circle brand-logo  mr-3 text-center">
+              <span class="brand-name">GBN</span> <br /><span class="brand-name-text">ONE</span>
+            </div>
+            <div class="media-body align-self-center">
+              <p class="brand-admin text-uppercase">BUSINEss</p>
+            </div>
+          </div>
+        </div>
+        <ul class="nav flex-column justify-content-center">
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "> <i class="fa fa-home themecolor"></i>
+              <span class="sidebar-menu-item">Home</span></a>
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list active rounded-pill">
+            <a href="" class="nav-link "> <i class="fa fa-user themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">Profile</span></a>
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "> <i class="fa fa-laptop themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">Workspace</span></a>
+          </li>
+          <li>
+            <hr />
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "> <i class="fa fa-clock themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">Content Manager</span></a>
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "><i class="fa fa-shopping-bag themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">My Store</span></a>
+          </li>
+          <li class="nav-item mx-2 my-1 tesone dropdown py-1 sidebar-menu-item-list rounded-pill">
+            <a id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              href="" class="nav-link"> <i class="fa fa-map-marker themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">Local</span>
+              <i class="fa fa-chevron-right float-right mt-1" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "> <i class="fa fa-store themecolor"></i>
+              <span class="sidebar-menu-item">Cloud Store</span></a>
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "> <i class="fa fa-bar-chart themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">ADS</span></a>
+          </li>
+          <li>
+            <hr />
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "><i class="fa fa-user themecolor"></i>
+              <span class="sidebar-menu-item">Service Center</span></a>
+          </li>
+          <li class="nav-item mx-2 my-1 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "><i class="fa fa-cog themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">Settings</span></a>
+          </li>
+          <li class="nav-item mx-2 my-1 mt-5 py-1 sidebar-menu-item-list rounded-pill">
+            <a href="" class="nav-link "><i class="fa fa-sign-out themecolor" aria-hidden="true"></i>
+              <span class="sidebar-menu-item">Log Out</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="banner-section container mt-3">
+      <div class="card shadow-sm  banner-card-radius">
+        <img class="card-img-top img-fluid" src="../images/banner-img.jpg" alt="banner">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="media">
+                <img class="profile-img-card img-fluid" src="../images/profile-card-img.svg" alt="profile image">
+                <div class="media-body">
+                  <span class="profile-name">
+                    Ankit Muller
+                  </span>
+                  <p class="profile-text">
+                    Ernahrungsberater
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 text-md-right">
+              <button class="btn border-none text-white mt-1 px-4 py-2 mr-2 story-btn">
+                <i class="fa fa-plus mr-1"></i> Add Story
+              </button>
+              <button class="btn border-none mt-1 edit-profile-btn px-4 py-2 mr-1 small ">
+                <i class="fa fa-pen mr-1"></i> Edit Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="container banner-section mt-3">
+      <div class="card shadow-sm banner-card-radius">
+        <div class="card-header p-1 shadow-sm bg-white ">
+          <ul class="nav text-nowrap menubar-section">
+            <li class="nav-item active ">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fa fa-home" aria-hidden="true"></i><span class="ml-1">Home</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fa fa-store"></i><span class="ml-1">Store</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i><span class="ml-1">Local</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fas fa-concierge-bell"></i><span class="ml-1">Service/Appointment</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fa fa-table" aria-hidden="true"></i><span class="ml-1">Table Booking</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link " href="#">
+                <span class="rounded-circle themebg px-1 text-center bg-primary"><i
+                    class="fa fa-play text-white fa-sm"></i></span><span
+                  class="ml-1 text-secondary">Entertainment</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fa fa-rss" aria-hidden="true"></i><span class="ml-1">Feed</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fa fa-thumbs-up"></i><span class="ml-1">Reviews/Ratings</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-secondary" href="#">
+                <i class="fa fa-thumbs-up"></i><span class="ml-1">Reviews/Ratings</span></a>
+            </li>
+          </ul>
+          <span class="more-items-btn rounded-circle px-1 themebg">
+            <i class="fa fa-chevron-right text-white p-1" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="card">
+            <img class="card-img-top overlap-image-size img-fluid" src="../images/sec-banner.jpg" alt="banner">
+            <div class="card-img-overlay mt-4">
+              <h5 class="card-title overlap-title mt-5">Podcast/Video Title</h5>
+              <p class="card-title overlap-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh
+                viverra nullam ut eget. Ipsum lacus, eu facilisi amet enim. Egestas facilisis condimentum aliquam
+                dictumst fames in at libero. Erat egestas augue phasellus magnis.</p>
+              <button class="card-text btn border-none text-white mt-1 px-3 py-2 story-btn">
+                <i class="fa fa-play mr-2 fa-lg"></i><span>watch</span>
+              </button>
+            </div>
+          </div>
+          <div class="container banner-card-radius shadow-sm card mt-4 ">
+            <p class="font-weight-bold small mt-3 mb-1 ml-3">Photos</p>
+            <div class="row mb-3 ">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="img-fluid single-photos" src="../images/gym-sectio-one.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card multi-photos">
+                      <img class="img-fluid" src="../images/col-2-pic-one.jpg" alt="">
                     </div>
-                  
-                  </nav>
-               </header>
-
-               <section class="banner-section container mt-3">
-                    <div class="card shadow-sm banner-card-radius">
-                        <img class="card-img-top img-fluid" src="../images/banner-img.jpg" alt="banner">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-md-6">
-                            <div class="media">
-                                <img class="profile-img-card img-fluid" src="../images/profile-card-img.svg" alt="profile image">
-                                <div class="media-body">
-                                    <span class="profile-name">
-                                        Ankit Muller
-                                    </span>
-                                    <p class="profile-text">
-                                        Ernahrungsberater
-                                    </p>
-                                 </div>
-                             </div>
-                             </div>
-                                 <div class="col-md-6 text-md-right"> 
-                                  <button class="btn border-none text-white mt-1 px-4 py-2 mr-2 story-btn">
-                                    <i class="fa fa-plus mr-1"></i> Add Story
-                                  </button>
-                                  <button class="btn border-none mt-1 edit-profile-btn px-4 py-2 mr-1 small ">
-                                    <i class="fa fa-pen mr-1"></i> Edit Profile
-                                  </button>
-                                </div>                                                               
-                            </div>                          
-                         </div> 
-                        </div>
-                         
-                  </section>
-                  <section class="container banner-section mt-3">
-                    <div class="card shadow-sm banner-card-radius">
-                        <div class="card-header p-1 shadow-sm bg-white ">
-                               <ul class="nav text-nowrap menubar-section">
-                                <li class="nav-item active ">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fa fa-home" aria-hidden="true"></i><span class="ml-1">Home</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fa fa-store"></i><span class="ml-1">Store</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span class="ml-1">Local</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fas fa-concierge-bell"></i><span class="ml-1">Service/Appointment</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fa fa-table" aria-hidden="true"></i><span class="ml-1">Table Booking</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link " href="#">
-                                    <span class="rounded-circle themebg px-1 text-center bg-primary"><i class="fa fa-play text-white fa-sm"></i></span><span class="ml-1 text-secondary">Entertainment</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fa fa-rss" aria-hidden="true"></i><span class="ml-1">Feed</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fa fa-thumbs-up"></i><span class="ml-1">Reviews/Ratings</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link text-secondary" href="#">
-                                    <i class="fa fa-thumbs-up"></i><span class="ml-1">Reviews/Ratings</span></a>
-                                </li>
-                              </ul>                     
-                          <span class="more-items-btn rounded-circle px-1 themebg">
-                            <i class="fa fa-chevron-right text-white p-1" aria-hidden="true"></i>
-                          </span>
-                        </div>
-                        <div class="card-body">
-                          <div class="card">
-                            <img class="card-img-top overlap-image-size img-fluid" src="../images/sec-banner.jpg" alt="banner">
-                             <div class="card-img-overlay mt-4">
-                              <h5 class="card-title overlap-title mt-5">Podcast/Video Title</h5>
-                              <p class="card-title overlap-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh viverra nullam ut eget. Ipsum lacus, eu facilisi amet enim. Egestas facilisis condimentum aliquam dictumst fames in at libero. Erat egestas augue phasellus magnis.</p>
-                              <button class="card-text btn border-none text-white mt-1 px-3 py-2 story-btn">
-                                <i class="fa fa-play mr-2 fa-lg"></i><span>watch</span> 
-                              </button>
-                            </div>
-                          </div>
-                         <div class="container banner-card-radius shadow-sm card mt-4 ">
-                          <p class="font-weight-bold small mt-3 mb-0 ml-3">Photos</p>
-                          <div class="row my-3 ">
-                            <div class="col-md-4">
-                              <div class="card">
-                                <img class="img-fluid single-photos" src="../images/gym-sectio-one.jpg" alt="">
-                              </div>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="card">
-                                    <img class="img-fluid multi-photos" src="../images/col-2-pic-one.jpg" alt="">
-                                  </div>
-                                  </div>
-                                  <div class="col-md-6 ">
-                                    <div class="card">
-                                    <img class="img-fluid multi-photos" src="../images/second-two.jpg" alt="">
-                                  </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="card mt-2 ">
-                                    <img class="img-fluid multi-photos" src="../images/three-img.jpg" alt="">
-                                  </div>
-                                  </div>
-                                  <div class="col-md-6  ">
-                                    <div class="card mt-2">
-                                    <img class="img-fluid multi-photos" src="../images/four-img.jpg" alt="">
-                                  </div>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                          <div class="card container mt-4 banner-card-radius shadow-sm">
-                            <p class="font-weight-bold small mt-3 mb-0 ml-3">Videos</p>
-                            <div class="row my-3">
-                              <div class="col-md-3">
-                                <div class="card">
-                                  <img class="card-img-top" src="../images/first_video.jpg" alt="">
-                                  <span class="play-icon text-center">
-                                    <i class="fa fa-play fa-sm"></i>
-                                  </span>
-                                  <div class="card-body px-1">
-                                      <div class="">
-                                        <img class="green-heart-vector mr-2" src="../images/heart-green.jpg" alt="">
-                                        <span class="category-text">Gesundheit// Sub category </span>
-                                        <span class="rating-icon bg-white shadow-sm">
-                                          <div class="textone">
-                                          <i class="fa fa-star text-warning fa-xs"></i>
-                                           <small>2.12</small> 
-                                          </div>
-                                        </span>
-                                      </div>
-                                        <p class="video-details">
-                                          Video title for a video which will be here 
-                                        </p>
-                                      
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                  <div class="col-md-6 ">
+                    <div class="card multi-photos">
+                      <img class="img-fluid " src="../images/second-two.jpg" alt="">
                     </div>
-                  </section>
-               </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card mt-2 multi-photos ">
+                      <img class="img-fluid " src="../images/three-img.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6  ">
+                    <div class="card mt-2 multi-photos">
+                      <img class="img-fluid " src="../images/four-img.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card container mt-4 banner-card-radius shadow-sm">
+            <p class="font-weight-bold small mt-3 mb-1 ml-3">Videos</p>
+            <span class="more-items-btn-right rounded-circle px-1 themebg">
+              <i class="fa fa-chevron-right text-white p-1" aria-hidden="true"></i>
+            </span>
+            <span class="more-items-btn-left rounded-circle px-1 bg-secondary">
+              <i class="fa fa-chevron-left text-white p-1" aria-hidden="true"></i>
+            </span>
+            <div class="row mb-3">
+              <div class="col-12 menubar-section parent-card">
+                <div class="card banner-card-radius mr-2">
+                  <img class="card-img-top img-fluid parent-img-card" src="../images/first_video.jpg" alt="">
+                  <span class="play-icon text-center">
+                    <i class="fa fa-play fa-sm"></i>
+                  </span>
+                  <span class="time-video themebg text-white text-center">
+                    10:23
+                  </span>
+
+                  <div class="card-body px-1">
+                    <div class="d-flex flex-columns flex-wrap justify-content-center">
+                      <img class="green-heart-vector mr-2" src="../images/heart-green.jpg" alt="">
+                      <p class="category-text">Gesundheit// Sub category </p>
+                      <span class="rating-icon text-center shadow-sm ">
+                        <i class="fa fa-star text-warning star-icon"></i>
+                        <span class="rating-number">4.9</span>
+                      </span>
+                      <p class="video-details">
+                        Video title for a video which will be here
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card banner-card-radius mr-2">
+                  <img class="card-img-top img-fluid parent-img-card" src="../images/second-img-v.jpg" alt="">
+                  <span class="play-icon text-center">
+                    <i class="fa fa-play fa-sm"></i>
+                  </span>
+                  <span class="time-video themebg text-white text-center">
+                    10:23
+                  </span>
+
+                  <div class="card-body px-1">
+                    <div class="d-flex flex-columns flex-wrap justify-content-center">
+                      <img class="green-heart-vector mr-2" src="../images/heart-green.jpg" alt="">
+                      <p class="category-text">Gesundheit// Sub category </p>
+                      <span class="rating-icon text-center shadow-sm ">
+                        <i class="fa fa-star text-warning star-icon"></i>
+                        <span class="rating-number">4.9</span>
+                      </span>
+                      <p class="video-details">
+                        Video title for a video which will be here
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card banner-card-radius mr-2">
+                  <img class="card-img-top img-fluid parent-img-card" src="../images/heart-green.jpg" alt="">
+                  <span class="play-icon text-center">
+                    <i class="fa fa-play fa-sm"></i>
+                  </span>
+                  <span class="time-video themebg text-white text-center">
+                    10:23
+                  </span>
+
+                  <div class="card-body px-1">
+                    <div class="d-flex flex-columns flex-wrap justify-content-center">
+                      <img class="green-heart-vector mr-2" src="../images/heart-green.jpg" alt="">
+                      <p class="category-text">Gesundheit// Sub category </p>
+                      <span class="rating-icon text-center shadow-sm ">
+                        <i class="fa fa-star text-warning star-icon"></i>
+                        <span class="rating-number">4.9</span>
+                      </span>
+                      <p class="video-details">
+                        Video title for a video which will be here
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card banner-card-radius mr-2">
+                  <img class="card-img-top img-fluid parent-img-card" src="../images/third-v-img.jpg" alt="">
+                  <span class="play-icon text-center">
+                    <i class="fa fa-play fa-sm"></i>
+                  </span>
+                  <span class="time-video themebg text-white text-center">
+                    10:23
+                  </span>
+
+                  <div class="card-body px-1">
+                    <div class="d-flex flex-columns flex-wrap justify-content-center">
+                      <img class="green-heart-vector mr-2" src="../images/heart-green.jpg" alt="">
+                      <p class="category-text">Gesundheit// Sub category </p>
+                      <span class="rating-icon text-center shadow-sm ">
+                        <i class="fa fa-star text-warning star-icon"></i>
+                        <span class="rating-number">4.9</span>
+                      </span>
+                      <p class="video-details">
+                        Video title for a video which will be here
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card banner-card-radius mr-2">
+                  <img class="card-img-top img-fluid parent-img-card" src="../images/first_video.jpg" alt="">
+                  <span class="play-icon text-center">
+                    <i class="fa fa-play fa-sm"></i>
+                  </span>
+                  <span class="time-video themebg text-white text-center">
+                    10:23
+                  </span>
+
+                  <div class="card-body px-1">
+                    <div class="d-flex flex-columns flex-wrap justify-content-center">
+                      <img class="green-heart-vector mr-2" src="../images/heart-green.jpg" alt="">
+                      <p class="category-text">Gesundheit// Sub category </p>
+                      <span class="rating-icon text-center shadow-sm ">
+                        <i class="fa fa-star text-warning star-icon"></i>
+                        <span class="rating-number">4.9</span>
+                      </span>
+                      <p class="video-details">
+                        Video title for a video which will be here
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="card container mt-4 banner-card-radius shadow-sm">
+            <p class="font-weight-bold small mt-3 mb-1 ml-3">Podcasts</p>
+            <span class="more-items-btn-right rounded-circle px-1 themebg">
+              <i class="fa fa-chevron-right text-white p-1" aria-hidden="true"></i>
+            </span>
+            <span class="more-items-btn-left rounded-circle px-1 bg-secondary">
+              <i class="fa fa-chevron-left text-white p-1" aria-hidden="true"></i>
+            </span>
+            <div class="row mb-3">
+              <div class="col-12 menubar-section podcast-list-item">
+                <div class="card mr-2 shadow-md">
+                  <span class="podcasts-rating-icon-number text-center bg-light">
+                    <i class="fa fa-star text-warning mt-2"></i>
+                    <span class="">4.9</span>
+                  </span>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title podcast-title text-white">Podcasts Title Best Podcast Ever Ever Mode</h5>
+                    <div class="media">
+                      <img class="img-fluid podcast-profile-img" src="../images/pod-profile-img.png" alt="">
+                      <div class="media-body">
+                        <h6 class="small mt-1 font-weight-bold text-muted">Courtney Henry</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card mr-2 shadow-md">
+                  <span class="podcasts-rating-icon-number text-center bg-light">
+                    <i class="fa fa-star text-warning mt-2"></i>
+                    <span class="">4.9</span>
+                  </span>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title podcast-title text-white">Podcasts Title Best Podcast Ever Ever Mode</h5>
+                    <div class="media">
+                      <img class="img-fluid podcast-profile-img" src="../images/pod-profile-img.png" alt="">
+                      <div class="media-body">
+                        <h6 class="small mt-1 font-weight-bold text-muted">Courtney Henry</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mr-2 shadow-md">
+                  <span class="podcasts-rating-icon-number text-center bg-light">
+                    <i class="fa fa-star text-warning mt-2"></i>
+                    <span class="">4.9</span>
+                  </span>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title podcast-title text-white">Podcasts Title Best Podcast Ever Ever Mode</h5>
+                    <div class="media">
+                      <img class="img-fluid podcast-profile-img" src="../images/pod-profile-img.png" alt="">
+                      <div class="media-body">
+                        <h6 class="small mt-1 font-weight-bold text-muted">Courtney Henry</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mr-2 shadow-md">
+                  <span class="podcasts-rating-icon-number text-center bg-light">
+                    <i class="fa fa-star text-warning mt-2"></i>
+                    <span class="">4.9</span>
+                  </span>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title podcast-title text-white">Podcasts Title Best Podcast Ever Ever Mode</h5>
+                    <div class="media">
+                      <img class="img-fluid podcast-profile-img" src="../images/pod-profile-img.png" alt="">
+                      <div class="media-body">
+                        <h6 class="small mt-1 font-weight-bold text-muted">Courtney Henry</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mr-2 shadow-md">
+                  <span class="podcasts-rating-icon-number text-center bg-light">
+                    <i class="fa fa-star text-warning mt-2"></i>
+                    <span class="">4.9</span>
+                  </span>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title podcast-title text-white">Podcasts Title Best Podcast Ever Ever Mode</h5>
+                    <div class="media">
+                      <img class="img-fluid podcast-profile-img" src="../images/pod-profile-img.png" alt="">
+                      <div class="media-body">
+                        <h6 class="small mt-1 font-weight-bold text-muted">Courtney Henry</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
