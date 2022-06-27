@@ -167,11 +167,6 @@
     color: white;
 }
 
-.sidebar-menu-item-list.active {
-    background: var(--bgtheme) !important;
-    color: white;
-}
-
 /* sidebar css end */
 
 /* banner-section */
